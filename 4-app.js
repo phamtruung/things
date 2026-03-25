@@ -99,7 +99,7 @@ class App {
         const elCol = UI.Div.Column(this.classCol)
 
         // Input Name
-        const elInputName = UI.Input.Text(child.name);
+        const elInputName = UI.Input.TextArea(child.name);
         elInputName.classList.add(this.className)
         elCol.appendChild(elInputName);
 
@@ -318,12 +318,13 @@ class App {
 
         const elRow = UI.Div.Row()
         if (father == this.data.root) elRow.classList.add("underline")
+
         // Content
         const elContent = UI.Div.Row("map-input")
         elRow.appendChild(elContent)
 
         // Input Name
-        const elInputName = UI.Input.Text(child.name);
+        const elInputName = UI.Input.TextArea(child.name);
         elContent.appendChild(elInputName);
 
         // Note
